@@ -45,9 +45,9 @@ export default function PPFFeature({ onOpenBooking }) {
           <div className="lg:col-span-7 relative">
             <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl shadow-black/80 group">
               <img
-                src="/images/ppf-application.jpg"
+                src="/images/aurum-ppf-installation.jpg"
                 alt="Aurum Shine Detailing Master Technicians Installing Paint Protection Film"
-                className="w-full h-[480px] sm:h-[600px] object-cover object-center transition-transform duration-1000 group-hover:scale-103"
+                className="w-full h-[480px] sm:h-[600px] object-cover object-[center_35%] transition-transform duration-1000 group-hover:scale-103"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none" />
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent pointer-events-none" />

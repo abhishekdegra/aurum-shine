@@ -3,7 +3,7 @@ import { Calendar, MessageCircle, ChevronDown, CheckCircle2 } from "lucide-react
 import { STUDIO_INFO } from "../data/content";
 
 export default function Hero({ onOpenBooking }) {
-  const [activeHeroImg, setActiveHeroImg] = useState("/images/hero-stealth-car.jpg");
+  const [activeHeroImg, setActiveHeroImg] = useState("/images/aurum-studio-bay.jpg");
   const [mouseOffset, setMouseOffset] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -139,9 +139,9 @@ export default function Hero({ onOpenBooking }) {
             Studio Views:
           </span>
           {[
-            { label: "Stealth EV6", src: "/images/hero-stealth-car.jpg" },
-            { label: "Mercedes Bay", src: "/images/studio-mercedes-bay.jpg" },
-            { label: "Studio Facade", src: "/images/studio-facade.jpg" },
+            { label: "Studio Bay (BMW & Audi)", src: "/images/aurum-studio-bay.jpg" },
+            { label: "Mirror Gloss BE", src: "/images/aurum-ceramic-gloss.jpg" },
+            { label: "Studio Facade", src: "/images/aurum-studio-facade.jpg" },
           ].map((item) => (
             <button
               key={item.label}

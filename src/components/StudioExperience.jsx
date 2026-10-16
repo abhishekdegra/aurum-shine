@@ -107,9 +107,9 @@ export default function StudioExperience({ onOpenBooking }) {
           {/* Main Facade Shot */}
           <div className="lg:col-span-7 relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl group min-h-[260px] sm:min-h-[340px]">
             <img
-              src="/images/studio-facade.jpg"
+              src="/images/aurum-studio-facade.jpg"
               alt="Aurum Shine Detailing Studio Jaipur Exterior Facade"
-              className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-102"
+              className="w-full h-full object-cover object-[center_20%] sm:object-top transition-transform duration-700 group-hover:scale-102"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
 
@@ -141,21 +141,21 @@ export default function StudioExperience({ onOpenBooking }) {
           {/* Secondary Interior Bay Shot */}
           <div className="lg:col-span-5 relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl group min-h-[240px] sm:min-h-[340px]">
             <img
-              src="/images/studio-mercedes-bay.jpg"
-              alt="Interior Detailing Bay with Hexagonal Lighting and Mercedes-Benz"
+              src="/images/aurum-studio-bay.jpg"
+              alt="Aurum Shine Detailing Studio Bay with BMW 740d and Audi Sedans"
               className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-102"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
 
             <div className="absolute bottom-4 left-4 right-4 p-3 sm:p-4 rounded-xl bg-zinc-950/85 backdrop-blur-md border border-white/10">
               <span className="text-[10px] font-mono uppercase tracking-widest text-[#ff1a2b] font-bold">
-                LIGHTING BAY
+                FLAGSHIP BAY
               </span>
               <p className="text-xs sm:text-sm font-bold text-white font-['Outfit'] mt-0.5">
-                Hexagonal High-CRI Canopy
+                BMW 740d & Audi Precision Detailing Bay
               </p>
               <p className="text-[11px] text-zinc-400 font-mono">
-                "Your Car. Our Passion."
+                "Dedicated Garware PPF & BigFoot Polish Station"
               </p>
             </div>
           </div>

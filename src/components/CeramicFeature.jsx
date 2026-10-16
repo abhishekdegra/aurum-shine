@@ -60,9 +60,9 @@ export default function CeramicFeature({ onOpenBooking }) {
         {/* Hero Visual Display */}
         <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl mb-12 group">
           <img
-            src="/images/ceramic-beading.jpg"
-            alt="Ceramic coating water beading and hexagon light reflections at Aurum Shine Detailing Studio"
-            className="w-full h-[400px] sm:h-[520px] object-cover object-center transition-transform duration-1000 group-hover:scale-102"
+            src="/images/aurum-ceramic-gloss.jpg"
+            alt="Aurum Shine Detailing BE Concept Electric SUV with 10H Ceramic Coating Liquid Mirror Gloss"
+            className="w-full h-[400px] sm:h-[520px] object-cover object-[center_35%] transition-transform duration-1000 group-hover:scale-102"
           />
 
           {/* Gradients */}
