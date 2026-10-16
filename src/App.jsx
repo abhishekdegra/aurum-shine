@@ -40,7 +40,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#08080a] text-zinc-100 flex flex-col font-['Inter'] relative selection:bg-[#ff1a2b] selection:text-white">
+    <div className="min-h-screen bg-[#08080a] text-zinc-100 flex flex-col font-['Inter'] relative selection:bg-[#ff1a2b] selection:text-white overflow-x-hidden w-full">
       {/* 1. Cinematic Opening Intro Animation */}
       {showIntro && <CinematicIntro onComplete={() => setShowIntro(false)} />}
 
@@ -54,7 +54,7 @@ export default function App() {
       <Navbar onOpenBooking={handleOpenBooking} />
 
       {/* 5. Main Cinematic Sections Flow */}
-      <main className="flex-1">
+      <main className="flex-1 w-full overflow-x-hidden">
         {/* Full-Screen Hero */}
         <Hero onOpenBooking={handleOpenBooking} />
 

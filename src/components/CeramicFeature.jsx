@@ -76,7 +76,7 @@ export default function CeramicFeature({ onOpenBooking }) {
         {/* Immersive Split Showcase: Left Photo, Right Technical Features */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-14">
           {/* Left: The Aurum Shine Ceramic Vehicle - Zero Cropping */}
-          <div className="lg:col-span-6 relative">
+          <div className="lg:col-span-6 relative w-full min-w-0">
             <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl flex flex-col group">
               <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] max-h-[600px] overflow-hidden bg-black flex items-center justify-center">
                 <img
@@ -117,7 +117,7 @@ export default function CeramicFeature({ onOpenBooking }) {
           </div>
 
           {/* Right: Technical Narrative & Actions */}
-          <div className="lg:col-span-6 space-y-6">
+          <div className="lg:col-span-6 space-y-6 w-full min-w-0">
             <div className="p-6 rounded-2xl bg-zinc-950 border border-white/10 shadow-xl space-y-5">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-xl bg-[#ff1a2b]/20 border border-[#ff1a2b]/40 flex items-center justify-center text-[#ff1a2b] shrink-0">

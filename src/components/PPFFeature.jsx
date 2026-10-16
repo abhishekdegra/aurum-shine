@@ -40,9 +40,9 @@ export default function PPFFeature({ onOpenBooking }) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Large Immersive Split Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           {/* Left: Real PPF Installation Showcase - Fully visible with zero cropping */}
-          <div className="lg:col-span-7 relative">
+          <div className="lg:col-span-7 relative w-full min-w-0">
             <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl shadow-black/80 flex flex-col group">
               <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] max-h-[600px] overflow-hidden bg-black flex items-center justify-center">
                 <img
@@ -84,7 +84,7 @@ export default function PPFFeature({ onOpenBooking }) {
           </div>
 
           {/* Right: Technical Narrative & Features */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-5 space-y-6 w-full min-w-0">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-zinc-900 border border-[#ff1a2b]/30 text-xs font-mono text-[#ff4d5a] uppercase tracking-widest mb-3">
                 <Shield className="w-3.5 h-3.5" />
@@ -127,8 +127,8 @@ export default function PPFFeature({ onOpenBooking }) {
             </div>
 
             {/* Package Selector Tabs */}
-            <div className="pt-3 border-t border-white/10 space-y-3">
-              <div className="flex items-center gap-2 overflow-x-auto pb-1">
+            <div className="pt-3 border-t border-white/10 space-y-3 w-full min-w-0">
+              <div className="flex items-center gap-2 overflow-x-auto pb-1 max-w-full scrollbar-none">
                 {Object.keys(packages).map((key) => (
                   <button
                     key={key}

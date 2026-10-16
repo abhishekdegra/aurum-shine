@@ -66,9 +66,10 @@ export default function BeforeAfter({ onOpenBooking }) {
                 className="w-full h-full object-cover object-center pointer-events-none"
               />
               {/* After Badge */}
-              <div className="absolute top-5 right-5 px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-[#ff1a2b]/40 text-xs font-mono font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
+              <div className="absolute top-3 right-3 sm:top-5 sm:right-5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-[#ff1a2b]/40 text-[11px] sm:text-xs font-mono font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                AFTER: 100% Mirror Correction
+                <span className="hidden sm:inline">AFTER: 100% Mirror Correction</span>
+                <span className="sm:hidden">AFTER</span>
               </div>
             </div>
 
@@ -83,9 +84,10 @@ export default function BeforeAfter({ onOpenBooking }) {
                 className="w-full h-full object-cover object-center pointer-events-none"
               />
               {/* Before Badge */}
-              <div className="absolute top-5 left-5 px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-white/20 text-xs font-mono font-bold text-zinc-300 uppercase tracking-wider flex items-center gap-1.5">
+              <div className="absolute top-3 left-3 sm:top-5 sm:left-5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-white/20 text-[11px] sm:text-xs font-mono font-bold text-zinc-300 uppercase tracking-wider flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-rose-500" />
-                BEFORE: Heavy Swirls & Hazing
+                <span className="hidden sm:inline">BEFORE: Heavy Swirls</span>
+                <span className="sm:hidden">BEFORE</span>
               </div>
             </div>
 
