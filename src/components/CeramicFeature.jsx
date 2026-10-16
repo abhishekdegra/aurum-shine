@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Sparkles, Droplets, Shield, Award, ArrowRight, CheckCircle2, Flame, Sun, Layers } from "lucide-react";
+import { Sparkles, Droplets, Shield, Award, ArrowRight, CheckCircle2, Flame, Sun, Layers, Check } from "lucide-react";
+import { STUDIO_INFO } from "../data/content";
 
 export default function CeramicFeature({ onOpenBooking }) {
   const [activeMetric, setActiveMetric] = useState(0);
@@ -31,6 +32,21 @@ export default function CeramicFeature({ onOpenBooking }) {
     },
   ];
 
+  const highlights = [
+    {
+      title: "10H Nano-Ceramic Matrix",
+      desc: "Permanent covalent bond that hardens over 48 hours to resist micro-marring and swirl marks.",
+    },
+    {
+      title: "Shortwave IR Heat Cured",
+      desc: "Industrial infrared heat baking lamps ensure 100% molecular cross-linking before delivery.",
+    },
+    {
+      title: "Self-Cleaning Hydrophobic Surface",
+      desc: "Super-slick tension angle repels mud, road grime, bird acids, and hard tap water stains.",
+    },
+  ];
+
   return (
     <section id="ceramic" className="py-24 lg:py-32 bg-[#060608] relative border-b border-white/10 overflow-hidden">
       {/* Ambient Red Studio Accent Bar */}
@@ -39,7 +55,7 @@ export default function CeramicFeature({ onOpenBooking }) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-zinc-900 border border-[#ff1a2b]/30 text-xs font-mono text-[#ff4d5a] uppercase tracking-widest mb-3">
             <Droplets className="w-3.5 h-3.5" />
             Molecular Nano-Ceramic Shield
@@ -57,65 +73,106 @@ export default function CeramicFeature({ onOpenBooking }) {
           </p>
         </div>
 
-        {/* Hero Visual Display */}
-        <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl mb-12 group">
-          <img
-            src="/images/aurum-ceramic-gloss.jpg"
-            alt="Aurum Shine Detailing BE Concept Electric SUV with 10H Ceramic Coating Liquid Mirror Gloss"
-            className="w-full h-[400px] sm:h-[520px] object-cover object-[center_35%] transition-transform duration-1000 group-hover:scale-102"
-          />
+        {/* Immersive Split Showcase: Left Photo, Right Technical Features */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-14">
+          {/* Left: The Aurum Shine Ceramic Vehicle - Zero Cropping */}
+          <div className="lg:col-span-6 relative">
+            <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl flex flex-col group">
+              <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] max-h-[600px] overflow-hidden bg-black flex items-center justify-center">
+                <img
+                  src="/images/aurum-ceramic-gloss.jpg"
+                  alt="Aurum Shine Detailing BE Concept Electric SUV with 10H Ceramic Coating Liquid Mirror Gloss"
+                  className="w-full h-full object-contain sm:object-cover object-center transition-transform duration-700 group-hover:scale-102"
+                />
+                <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent pointer-events-none" />
 
-          {/* Gradients */}
-          <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/30 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/80 via-transparent to-zinc-950/80" />
-
-          {/* Floating Data Overlay */}
-          <div className="absolute top-6 left-6 right-6 flex items-center justify-between">
-            <span className="px-3 py-1 rounded-md text-[11px] font-mono uppercase bg-black/80 backdrop-blur-md border border-white/15 text-zinc-200">
-              10H NANO-CERAMIC MATRIX • SHORTWAVE IR CURED
-            </span>
-
-            <span className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-[11px] font-mono bg-[#ff1a2b]/20 border border-[#ff1a2b]/40 text-[#ff7580]">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#ff1a2b] animate-ping" />
-              Hydrophobic Contact Angle: 115°
-            </span>
-          </div>
-
-          {/* Bottom Card Bar */}
-          <div className="absolute bottom-6 left-6 right-6 p-5 sm:p-6 rounded-xl bg-zinc-950/85 backdrop-blur-md border border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-[#ff1a2b]/20 border border-[#ff1a2b]/40 flex items-center justify-center text-[#ff1a2b] shrink-0">
-                <Sparkles className="w-6 h-6" />
+                {/* Floating Clean Badge */}
+                <div className="absolute top-4 left-4 z-10 flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-full bg-black/80 backdrop-blur-md border border-white/15 text-[11px] font-mono text-zinc-200 flex items-center gap-1.5 shadow-lg">
+                    <Sparkles className="w-3.5 h-3.5 text-[#ff1a2b]" />
+                    <span>Real Client Car at Aurum Shine</span>
+                  </span>
+                  <span className="hidden sm:inline-block px-2.5 py-1 rounded-full bg-[#ff1a2b]/20 border border-[#ff1a2b]/40 text-[10px] font-mono text-[#ff808b] uppercase">
+                    10H Mirror Depth
+                  </span>
+                </div>
               </div>
-              <div>
-                <h4 className="text-white font-bold text-base font-['Outfit']">
-                  True Ceramic Crystallization
-                </h4>
-                <p className="text-xs text-zinc-400 font-light mt-0.5">
-                  Multi-layer application with dedicated topcoat gloss booster and IR heat baking.
-                </p>
+
+              {/* Integrated Bottom Bar */}
+              <div className="p-4 bg-zinc-900/95 border-t border-white/10 flex items-center justify-between">
+                <div>
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-[#ff1a2b] font-bold">
+                    AURUM SHINE STUDIO • JAIPUR
+                  </span>
+                  <p className="text-xs sm:text-sm font-semibold text-white mt-0.5">
+                    Permanent Glass Shield & Paint Correction
+                  </p>
+                </div>
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#ff1a2b]/15 border border-[#ff1a2b]/30 text-white text-xs font-mono">
+                  <Shield className="w-3.5 h-3.5 text-[#ff1a2b]" />
+                  <span>10H Hardness</span>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div className="flex items-center gap-3 w-full md:w-auto">
-              <button
-                onClick={() => onOpenBooking("Ceramic Coating")}
-                data-cursor="BOOK"
-                className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-xs font-mono font-bold tracking-wider uppercase text-white bg-[#ff1a2b] hover:bg-[#d61323] transition-colors"
-              >
-                <span>Book Ceramic Package</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </button>
+          {/* Right: Technical Narrative & Actions */}
+          <div className="lg:col-span-6 space-y-6">
+            <div className="p-6 rounded-2xl bg-zinc-950 border border-white/10 shadow-xl space-y-5">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-xl bg-[#ff1a2b]/20 border border-[#ff1a2b]/40 flex items-center justify-center text-[#ff1a2b] shrink-0">
+                  <Sparkles className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white font-['Outfit'] uppercase">
+                    True Ceramic Crystallization
+                  </h3>
+                  <p className="text-xs text-zinc-400 font-light mt-0.5">
+                    Multi-layer formulation with dedicated topcoat gloss booster and IR curing.
+                  </p>
+                </div>
+              </div>
 
-              <a
-                href="https://wa.me/919509454982?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20would%20like%20to%20inquire%20about%20your%2010H%20Ceramic%20Coating%20packages."
-                target="_blank"
-                rel="noopener noreferrer"
-                data-cursor="CHAT"
-                className="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-white/10 text-xs font-mono text-zinc-300 hover:text-white transition-colors"
-              >
-                WhatsApp
-              </a>
+              {/* Highlight List */}
+              <div className="space-y-3 pt-2">
+                {highlights.map((item, idx) => (
+                  <div key={idx} className="flex items-start gap-3 p-3 rounded-xl bg-zinc-900/60 border border-white/5">
+                    <div className="w-5 h-5 rounded-md bg-[#ff1a2b]/20 border border-[#ff1a2b]/40 flex items-center justify-center text-[#ff1a2b] shrink-0 mt-0.5">
+                      <Check className="w-3 h-3" />
+                    </div>
+                    <div>
+                      <h4 className="text-xs font-mono font-bold tracking-wider uppercase text-white">
+                        {item.title}
+                      </h4>
+                      <p className="text-xs text-zinc-400 font-light mt-0.5">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Action Buttons */}
+              <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center gap-3">
+                <button
+                  onClick={() => onOpenBooking("Ceramic Coating")}
+                  data-cursor="BOOK"
+                  className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg text-xs font-mono font-bold tracking-wider uppercase text-white bg-[#ff1a2b] hover:bg-[#d61323] transition-colors shadow-lg shadow-red-950/50"
+                >
+                  <span>Book Ceramic Package</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </button>
+
+                <a
+                  href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=${encodeURIComponent("Hello Aurum Shine Detailing Jaipur, I would like to inquire about your 10H Ceramic Coating packages.")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-cursor="CHAT"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-white/10 text-xs font-mono text-zinc-300 hover:text-white transition-colors"
+                >
+                  WhatsApp Inquiry
+                </a>
+              </div>
             </div>
           </div>
         </div>

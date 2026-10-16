@@ -20,7 +20,7 @@ A bespoke, agency-tier digital web experience built for **Aurum Shine Detailing 
 - **4-Step Protocol Timeline**: 01 INSPECT → 02 PREPARE → 03 DETAIL → 04 DELIVER with responsive horizontal/vertical timeline.
 - **Jaipur Flagship Studio Facility**: Showcasing 6500K CRI hex inspection canopies, dust-free bays, and executive lounge.
 - **Editorial Automotive Gallery**: Filterable category masonry layout with full-resolution lightbox modal.
-- **Official WhatsApp Booking System (`+91 95094 54982`)**:
+- **Official WhatsApp Booking System (`+91 92579 25762`)**:
   - Modal form with real-time in-modal WhatsApp preview box.
   - Automatically formats an executive WhatsApp markdown message with clean bullet points and zero broken characters.
   - Desktop floating WhatsApp badge + mobile sticky bottom action bar with safe-area padding.
@@ -82,6 +82,6 @@ npm run preview
 
 * **Studio**: Aurum Shine Detailing Studio
 * **Location**: Jaipur, Rajasthan, India
-* **Official Hotline / WhatsApp**: +91 95094 54982
+* **Official Hotline / WhatsApp**: +91 92579 25762
 * **Hours**: Monday – Sunday: 9:30 AM – 8:00 PM
 * **Tagline**: *"Your Car. Our Obsession."* | *"Drive Clean. Stay Blessed."*

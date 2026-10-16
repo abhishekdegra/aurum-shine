@@ -39,13 +39,19 @@ export default function Hero({ onOpenBooking }) {
         <img
           src={activeHeroImg}
           alt="Aurum Shine Detailing Studio Jaipur - Luxury Automotive Detailing"
-          className="w-full h-full object-cover object-center transition-all duration-1000 ease-out"
+          className={`w-full h-full object-cover ${
+            activeHeroImg.includes("ceramic")
+              ? "object-[center_35%]"
+              : activeHeroImg.includes("facade")
+              ? "object-[center_25%]"
+              : "object-center"
+          } transition-all duration-1000 ease-out`}
         />
 
-        {/* Studio-Grade Dark Gradients & Cinematic Vignette */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#08080a] via-[#08080a]/70 to-[#08080a]/50" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#08080a]/90 via-[#08080a]/40 to-[#08080a]/90" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,#08080a_85%)]" />
+        {/* Studio-Grade Soft Gradients & Cinematic Vignette for maximum car visibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#08080a] via-[#08080a]/50 to-[#08080a]/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#08080a]/80 via-transparent to-[#08080a]/80" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_40%,#08080a_90%)]" />
 
         {/* Moving Red Light Streak */}
         <div

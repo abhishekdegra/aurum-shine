@@ -102,27 +102,64 @@ export default function StudioExperience({ onOpenBooking }) {
           </p>
         </div>
 
-        {/* Dual Real Studio Image Showcase (Compact Height) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-12 items-stretch">
-          {/* Main Facade Shot */}
-          <div className="lg:col-span-7 relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl group min-h-[260px] sm:min-h-[340px]">
-            <img
-              src="/images/aurum-studio-facade.jpg"
-              alt="Aurum Shine Detailing Studio Jaipur Exterior Facade"
-              className="w-full h-full object-cover object-[center_20%] sm:object-top transition-transform duration-700 group-hover:scale-102"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+        {/* Dual Real Studio Image Showcase - Framed perfectly to prevent awkward cropping */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-12 items-stretch">
+          {/* Main Panoramic Studio Bay Shot (1024x466) in wide col-span-7 */}
+          <div className="lg:col-span-7 flex flex-col rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl group">
+            <div className="relative w-full aspect-[16/9] sm:aspect-[2/1] bg-black overflow-hidden flex items-center justify-center">
+              <img
+                src="/images/aurum-studio-bay.jpg"
+                alt="Aurum Shine Detailing Studio Bay with BMW 740d and Audi Sedans"
+                className="w-full h-full object-contain sm:object-cover object-center transition-transform duration-700 group-hover:scale-102"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
 
-            <div className="absolute bottom-4 left-4 right-4 p-3 sm:p-4 rounded-xl bg-zinc-950/85 backdrop-blur-md border border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+              <div className="absolute top-3 left-3 z-10">
+                <span className="px-3 py-1 rounded-full bg-black/80 backdrop-blur-md border border-white/15 text-[11px] font-mono text-zinc-200">
+                  FLAGSHIP WORKSHOP BAY
+                </span>
+              </div>
+            </div>
+
+            <div className="p-3.5 sm:p-4 bg-zinc-900/95 border-t border-white/10 flex items-center justify-between">
               <div>
                 <span className="text-[10px] font-mono uppercase tracking-widest text-[#ff1a2b] font-bold">
-                  FLAGSHIP STUDIO FACADE • JAIPUR
+                  AURUM SHINE DETAILING BAY
                 </span>
                 <p className="text-xs sm:text-sm font-bold text-white font-['Outfit'] mt-0.5">
-                  AURUM SHINE DETAILING STUDIO
+                  BMW 740d & Audi Precision Detailing Station
                 </p>
-                <p className="text-[11px] text-zinc-400 font-mono">
-                  "Drive Clean. Stay Blessed."
+              </div>
+              <span className="text-[11px] text-zinc-400 font-mono hidden sm:inline">
+                Dual Active Bays • Dust-Free
+              </span>
+            </div>
+          </div>
+
+          {/* Exterior Studio Facade Shot in col-span-5 */}
+          <div className="lg:col-span-5 flex flex-col rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl group">
+            <div className="relative w-full aspect-[4/3] sm:aspect-[2/1] lg:aspect-[16/11] bg-black overflow-hidden flex items-center justify-center">
+              <img
+                src="/images/aurum-studio-facade.jpg"
+                alt="Aurum Shine Detailing Studio Jaipur Exterior Facade"
+                className="w-full h-full object-cover object-[center_25%] transition-transform duration-700 group-hover:scale-102"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+
+              <div className="absolute top-3 left-3 z-10">
+                <span className="px-3 py-1 rounded-full bg-black/80 backdrop-blur-md border border-white/15 text-[11px] font-mono text-zinc-200">
+                  STUDIO EXTERIOR
+                </span>
+              </div>
+            </div>
+
+            <div className="p-3.5 sm:p-4 bg-zinc-900/95 border-t border-white/10 flex items-center justify-between gap-2">
+              <div>
+                <span className="text-[10px] font-mono uppercase tracking-widest text-[#ff1a2b] font-bold">
+                  FLAGSHIP FACADE • JAIPUR
+                </span>
+                <p className="text-xs sm:text-sm font-bold text-white font-['Outfit'] mt-0.5">
+                  Aurum Shine Detailing Studio
                 </p>
               </div>
 
@@ -130,33 +167,11 @@ export default function StudioExperience({ onOpenBooking }) {
                 href={STUDIO_INFO.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-900 border border-white/10 text-xs font-mono text-zinc-200 hover:text-white hover:border-[#ff1a2b]/50 transition-colors shrink-0 w-fit"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-white/10 text-xs font-mono text-zinc-200 hover:text-white hover:border-[#ff1a2b]/50 transition-colors shrink-0"
               >
                 <MapPin className="w-3.5 h-3.5 text-[#ff1a2b]" />
-                <span>Get Directions</span>
+                <span>Directions</span>
               </a>
-            </div>
-          </div>
-
-          {/* Secondary Interior Bay Shot */}
-          <div className="lg:col-span-5 relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl group min-h-[240px] sm:min-h-[340px]">
-            <img
-              src="/images/aurum-studio-bay.jpg"
-              alt="Aurum Shine Detailing Studio Bay with BMW 740d and Audi Sedans"
-              className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-102"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
-
-            <div className="absolute bottom-4 left-4 right-4 p-3 sm:p-4 rounded-xl bg-zinc-950/85 backdrop-blur-md border border-white/10">
-              <span className="text-[10px] font-mono uppercase tracking-widest text-[#ff1a2b] font-bold">
-                FLAGSHIP BAY
-              </span>
-              <p className="text-xs sm:text-sm font-bold text-white font-['Outfit'] mt-0.5">
-                BMW 740d & Audi Precision Detailing Bay
-              </p>
-              <p className="text-[11px] text-zinc-400 font-mono">
-                "Dedicated Garware PPF & BigFoot Polish Station"
-              </p>
             </div>
           </div>
         </div>

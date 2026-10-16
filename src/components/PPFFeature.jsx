@@ -41,44 +41,43 @@ export default function PPFFeature({ onOpenBooking }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Large Immersive Split Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left: Large PPF Image with Technician Application */}
+          {/* Left: Real PPF Installation Showcase - Fully visible with zero cropping */}
           <div className="lg:col-span-7 relative">
-            <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl shadow-black/80 group">
-              <img
-                src="/images/aurum-ppf-installation.jpg"
-                alt="Aurum Shine Detailing Master Technicians Installing Paint Protection Film"
-                className="w-full h-[480px] sm:h-[600px] object-cover object-[center_35%] transition-transform duration-1000 group-hover:scale-103"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none" />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent pointer-events-none" />
+            <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl shadow-black/80 flex flex-col group">
+              <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] max-h-[600px] overflow-hidden bg-black flex items-center justify-center">
+                <img
+                  src="/images/aurum-ppf-installation.jpg"
+                  alt="Aurum Shine Detailing Master Technicians Installing Paint Protection Film"
+                  className="w-full h-full object-contain sm:object-cover object-top transition-transform duration-700 group-hover:scale-102"
+                />
+                {/* Subtle base gradient for clean contrast */}
+                <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent pointer-events-none" />
 
-              {/* Large Overlay Display Wordmark on Image */}
-              <div className="absolute top-8 left-8 z-10 pointer-events-none">
-                <span className="text-4xl sm:text-6xl font-black uppercase tracking-tight text-white/90 font-['Outfit'] block leading-[0.88]">
-                  PAINT <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">
-                    PROTECTION{" "}
+                {/* Top Clean Badge Pill */}
+                <div className="absolute top-4 left-4 z-10 flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-full bg-black/80 backdrop-blur-md border border-white/15 text-[11px] font-mono text-zinc-200 flex items-center gap-1.5 shadow-lg">
+                    <ShieldCheck className="w-3.5 h-3.5 text-[#ff1a2b]" />
+                    <span>Real Studio PPF Installation</span>
                   </span>
-                  <br />
-                  <span className="text-[#ff1a2b] text-glow">
-                    FILM
+                  <span className="hidden sm:inline-block px-2.5 py-1 rounded-full bg-[#ff1a2b]/20 border border-[#ff1a2b]/40 text-[10px] font-mono text-[#ff808b] uppercase">
+                    Self-Healing TPU
                   </span>
-                </span>
+                </div>
               </div>
 
-              {/* Floating studio badge on image */}
-              <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-zinc-950/85 backdrop-blur-md border border-white/10 flex items-center justify-between">
+              {/* Integrated Bottom Info Bar */}
+              <div className="p-4 bg-zinc-900/90 border-t border-white/10 flex items-center justify-between">
                 <div>
                   <span className="text-[10px] font-mono uppercase tracking-widest text-[#ff1a2b] font-bold">
-                    Cleanroom Installation
+                    AURUM SHINE STUDIO • JAIPUR
                   </span>
                   <p className="text-xs sm:text-sm font-semibold text-white mt-0.5">
-                    Aurum Shine Detailing Studio • Jaipur
+                    TPU Edge-Wrapping & Precision Installation
                   </p>
                 </div>
                 <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#ff1a2b]/15 border border-[#ff1a2b]/30 text-white text-xs font-mono">
                   <ShieldCheck className="w-4 h-4 text-[#ff1a2b]" />
-                  <span>Certified TPU</span>
+                  <span>Certified TPU Film</span>
                 </div>
               </div>
             </div>
@@ -176,7 +175,7 @@ export default function PPFFeature({ onOpenBooking }) {
               </button>
 
               <a
-                href={`https://wa.me/919509454982?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20would%20like%20to%20inquire%20about%20${encodeURIComponent(packages[activeTab].name)}`}
+                href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20would%20like%20to%20inquire%20about%20${encodeURIComponent(packages[activeTab].name)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 data-cursor="CHAT"

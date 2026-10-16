@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Shield, Sparkles, Disc, Armchair, Droplets, Wrench, ArrowRight, CheckCircle2, Clock } from "lucide-react";
-import { SERVICES } from "../data/content";
+import { SERVICES, STUDIO_INFO } from "../data/content";
 
 const serviceIcons = {
   ppf: Shield,
@@ -9,6 +9,12 @@ const serviceIcons = {
   interior: Armchair,
   wash: Droplets,
   accessories: Wrench,
+};
+
+const getServiceObjPosition = (id) => {
+  if (id === "ppf") return "object-top";
+  if (id === "ceramic") return "object-[center_35%]";
+  return "object-center";
 };
 
 export default function Services({ onOpenBooking }) {
@@ -123,7 +129,7 @@ export default function Services({ onOpenBooking }) {
               key={activeService.id}
               src={activeService.image}
               alt={activeService.name}
-              className="absolute inset-0 w-full h-full object-cover object-center transition-all duration-700 scale-102 group-hover:scale-105"
+              className={`absolute inset-0 w-full h-full object-cover ${getServiceObjPosition(activeService.id)} transition-all duration-700 scale-102 group-hover:scale-105`}
             />
 
             {/* Gradient Overlays */}
@@ -178,7 +184,7 @@ export default function Services({ onOpenBooking }) {
                 </button>
 
                 <a
-                  href={`https://wa.me/919509454982?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20want%20to%20inquire%20about%20${encodeURIComponent(activeService.name)}`}
+                  href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20want%20to%20inquire%20about%20${encodeURIComponent(activeService.name)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor="WHATSAPP"
@@ -207,7 +213,7 @@ export default function Services({ onOpenBooking }) {
                   <img
                     src={service.image}
                     alt={service.name}
-                    className="w-full h-full object-cover object-center"
+                    className={`w-full h-full object-cover ${getServiceObjPosition(service.id)}`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent" />
 
@@ -248,7 +254,7 @@ export default function Services({ onOpenBooking }) {
                       Book Service
                     </button>
                     <a
-                      href={`https://wa.me/919509454982?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20want%20to%20inquire%20about%20${encodeURIComponent(service.name)}`}
+                      href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20want%20to%20inquire%20about%20${encodeURIComponent(service.name)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-3 py-2.5 rounded-lg bg-zinc-800 text-xs font-mono text-emerald-400 border border-white/5"

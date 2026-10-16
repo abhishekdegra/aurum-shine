@@ -41,6 +41,13 @@ export default function Gallery() {
     );
   };
 
+  const getObjectPosition = (image) => {
+    if (image.includes("facade")) return "object-[center_20%]";
+    if (image.includes("ppf-installation")) return "object-top";
+    if (image.includes("ceramic-gloss")) return "object-[center_35%]";
+    return "object-center";
+  };
+
   return (
     <section id="gallery" className="py-24 lg:py-32 bg-[#08080a] relative border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -95,7 +102,7 @@ export default function Gallery() {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                    className={`w-full h-full object-cover ${getObjectPosition(item.image)} transition-transform duration-700 ease-out group-hover:scale-105`}
                     loading="lazy"
                   />
 

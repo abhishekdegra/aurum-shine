@@ -199,7 +199,7 @@ export default function BookingModal({ isOpen, onClose, initialService = "" }) {
                     <input
                       type="tel"
                       required
-                      placeholder="+91 95094 54982"
+                      placeholder="+91 92579 25762"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                       className="w-full pl-9 pr-3 py-2.5 rounded-lg bg-zinc-900/90 border border-white/10 text-white placeholder-zinc-500 text-sm focus:border-[#ff1a2b] focus:outline-none focus:ring-1 focus:ring-[#ff1a2b]"
@@ -304,7 +304,7 @@ export default function BookingModal({ isOpen, onClose, initialService = "" }) {
                   <div className="text-zinc-400 italic text-[11px]">Premium Automotive Detailing Studio</div>
                   <div className="text-zinc-600 text-[10px]">───────────────────────</div>
                   <div>• <strong className="text-white">Customer:</strong> {name || "Your Name"}</div>
-                  <div>• <strong className="text-white">Phone:</strong> {phone || "+91 95094 54982"}</div>
+                  <div>• <strong className="text-white">Phone:</strong> {phone || "+91 92579 25762"}</div>
                   <div>• <strong className="text-white">Vehicle:</strong> {carModel || "Your Car Make & Model"}</div>
                   <div>• <strong className="text-white">Service:</strong> {service}</div>
                   <div>• <strong className="text-white">Date:</strong> {date || "Preferred Date"} ({time.split("-")[0].trim()})</div>
