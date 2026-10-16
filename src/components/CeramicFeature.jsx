@@ -61,7 +61,7 @@ export default function CeramicFeature({ onOpenBooking }) {
         <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl mb-12 group">
           <img
             src="/images/ceramic-beading.jpg"
-            alt="Ceramic coating water beading and hexagon light reflections at Detailing Rebels Studio"
+            alt="Ceramic coating water beading and hexagon light reflections at Aurum Shine Detailing Studio"
             className="w-full h-[400px] sm:h-[520px] object-cover object-center transition-transform duration-1000 group-hover:scale-102"
           />
 
@@ -108,7 +108,7 @@ export default function CeramicFeature({ onOpenBooking }) {
               </button>
 
               <a
-                href="https://wa.me/919509454982?text=Hello%20Detailing%20Rebels%20Jaipur,%20I%20would%20like%20to%20inquire%20about%20your%2010H%20Ceramic%20Coating%20packages."
+                href="https://wa.me/919509454982?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20would%20like%20to%20inquire%20about%20your%2010H%20Ceramic%20Coating%20packages."
                 target="_blank"
                 rel="noopener noreferrer"
                 data-cursor="CHAT"

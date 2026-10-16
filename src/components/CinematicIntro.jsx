@@ -37,28 +37,17 @@ export default function CinematicIntro({ onComplete }) {
 
       {/* Center Branding Area */}
       <div className="relative z-10 flex flex-col items-center text-center px-6">
-        {/* Automotive Silhouette Icon */}
+        {/* Provided Brand Logo Image */}
         <div
-          className={`w-14 h-14 rounded-xl bg-zinc-950 border border-white/10 flex items-center justify-center mb-6 shadow-2xl transition-all duration-700 ${
+          className={`h-20 sm:h-24 w-auto rounded-2xl bg-zinc-950/80 border border-white/10 p-2 flex items-center justify-center mb-6 shadow-2xl transition-all duration-700 ${
             stage >= 2 ? "opacity-100 scale-100" : "opacity-0 scale-90"
           }`}
         >
-          <svg viewBox="0 0 40 40" className="w-9 h-9 text-[#ff1a2b]" fill="none">
-            <path
-              d="M4 24 C8 15, 17 11, 24 11 C31 11, 36 16, 37 21"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-            />
-            <path
-              d="M8 27 C13 20, 19 17, 24 17 C29 17, 33 21, 34 25"
-              stroke="#ffffff"
-              strokeWidth="1.75"
-              strokeLinecap="round"
-            />
-            <circle cx="13" cy="27" r="2.5" fill="currentColor" />
-            <circle cx="29" cy="27" r="2.5" fill="currentColor" />
-          </svg>
+          <img
+            src="/images/aurum-shine-logo.jpg"
+            alt="Aurum Shine Detailing Logo"
+            className="h-full w-auto object-contain rounded-xl"
+          />
         </div>
 
         {/* Thin Expanding Red Laser Line */}
@@ -78,9 +67,9 @@ export default function CinematicIntro({ onComplete }) {
         >
           <div className="relative inline-block overflow-hidden pb-1">
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-wider uppercase font-['Outfit'] flex items-center gap-3">
-              <span className="text-white">DETAILING</span>
+              <span className="text-white">AURUM SHINE</span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff1a2b] via-[#ff4d5a] to-[#d60012] text-glow">
-                REBELS
+                DETAILING
               </span>
             </h1>
 

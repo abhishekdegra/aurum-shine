@@ -178,7 +178,7 @@ export default function Services({ onOpenBooking }) {
                 </button>
 
                 <a
-                  href={`https://wa.me/919509454982?text=Hello%20Detailing%20Rebels%20Jaipur,%20I%20want%20to%20inquire%20about%20${encodeURIComponent(activeService.name)}`}
+                  href={`https://wa.me/919509454982?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20want%20to%20inquire%20about%20${encodeURIComponent(activeService.name)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor="WHATSAPP"
@@ -248,7 +248,7 @@ export default function Services({ onOpenBooking }) {
                       Book Service
                     </button>
                     <a
-                      href={`https://wa.me/919509454982?text=Hello%20Detailing%20Rebels%20Jaipur,%20I%20want%20to%20inquire%20about%20${encodeURIComponent(service.name)}`}
+                      href={`https://wa.me/919509454982?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20want%20to%20inquire%20about%20${encodeURIComponent(service.name)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-3 py-2.5 rounded-lg bg-zinc-800 text-xs font-mono text-emerald-400 border border-white/5"

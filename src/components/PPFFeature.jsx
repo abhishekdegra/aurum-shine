@@ -46,7 +46,7 @@ export default function PPFFeature({ onOpenBooking }) {
             <div className="relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl shadow-black/80 group">
               <img
                 src="/images/ppf-application.jpg"
-                alt="Detailing Rebels Master Technicians Installing Paint Protection Film"
+                alt="Aurum Shine Detailing Master Technicians Installing Paint Protection Film"
                 className="w-full h-[480px] sm:h-[600px] object-cover object-center transition-transform duration-1000 group-hover:scale-103"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none" />
@@ -73,7 +73,7 @@ export default function PPFFeature({ onOpenBooking }) {
                     Cleanroom Installation
                   </span>
                   <p className="text-xs sm:text-sm font-semibold text-white mt-0.5">
-                    Detailing Rebels Studio • Jaipur
+                    Aurum Shine Detailing Studio • Jaipur
                   </p>
                 </div>
                 <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#ff1a2b]/15 border border-[#ff1a2b]/30 text-white text-xs font-mono">
@@ -176,7 +176,7 @@ export default function PPFFeature({ onOpenBooking }) {
               </button>
 
               <a
-                href={`https://wa.me/919509454982?text=Hello%20Detailing%20Rebels%20Jaipur,%20I%20would%20like%20to%20inquire%20about%20${encodeURIComponent(packages[activeTab].name)}`}
+                href={`https://wa.me/919509454982?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20would%20like%20to%20inquire%20about%20${encodeURIComponent(packages[activeTab].name)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 data-cursor="CHAT"

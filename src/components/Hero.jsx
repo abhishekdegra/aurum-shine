@@ -38,7 +38,7 @@ export default function Hero({ onOpenBooking }) {
       >
         <img
           src={activeHeroImg}
-          alt="Detailing Rebels Studio Jaipur - Luxury Automotive Detailing"
+          alt="Aurum Shine Detailing Studio Jaipur - Luxury Automotive Detailing"
           className="w-full h-full object-cover object-center transition-all duration-1000 ease-out"
         />
 
@@ -122,7 +122,7 @@ export default function Hero({ onOpenBooking }) {
           </button>
 
           <a
-            href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Detailing%20Rebels%20Jaipur,%20I%20would%20like%20to%20inquire%20about%20detailing%20my%20car.`}
+            href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20would%20like%20to%20inquire%20about%20detailing%20my%20car.`}
             target="_blank"
             rel="noopener noreferrer"
             data-cursor="CHAT"

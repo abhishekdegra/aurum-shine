@@ -70,34 +70,20 @@ export default function Navbar({ onOpenBooking }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Brand Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            {/* Automotive Red Silhouette Emblem */}
-            <div className="relative w-10 h-10 md:w-11 md:h-11 rounded-lg bg-zinc-900 border border-white/10 flex items-center justify-center overflow-hidden group-hover:border-[#ff1a2b]/60 transition-colors">
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#ff1a2b]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <svg viewBox="0 0 40 40" className="w-7 h-7 text-[#ff1a2b]" fill="none">
-                <path
-                  d="M4 24 C8 15, 17 11, 24 11 C31 11, 36 16, 37 21"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M8 27 C13 20, 19 17, 24 17 C29 17, 33 21, 34 25"
-                  stroke="#ffffff"
-                  strokeWidth="1.75"
-                  strokeLinecap="round"
-                />
-                <circle cx="13" cy="27" r="2.5" fill="currentColor" />
-                <circle cx="29" cy="27" r="2.5" fill="currentColor" />
-              </svg>
-            </div>
+            {/* Provided Aurum Shine Detailing Logo */}
+            <img
+              src="/images/aurum-shine-logo.jpg"
+              alt="Aurum Shine Detailing Logo"
+              className="h-10 md:h-11 w-auto max-w-[56px] object-contain rounded-lg border border-white/15 bg-black/40 group-hover:border-[#ff1a2b]/60 transition-colors shadow-sm"
+            />
 
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5">
                 <span className="font-extrabold tracking-wider text-lg md:text-xl text-white font-['Outfit'] group-hover:text-[#ff1a2b] transition-colors">
-                  DETAILING
+                  AURUM SHINE
                 </span>
                 <span className="font-black tracking-wider text-lg md:text-xl text-[#ff1a2b] font-['Outfit']">
-                  REBELS
+                  DETAILING
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -125,7 +111,7 @@ export default function Navbar({ onOpenBooking }) {
           {/* Right Action Area */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Detailing%20Rebels%20Jaipur,%20I%20would%20like%20to%20inquire%20about%20your%20services.`}
+              href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20would%20like%20to%20inquire%20about%20your%20services.`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-3.5 py-2 rounded-md bg-zinc-900/80 border border-white/10 hover:border-emerald-500/50 hover:bg-zinc-800 text-xs font-mono text-zinc-300 hover:text-emerald-400 transition-all"
@@ -174,6 +160,23 @@ export default function Navbar({ onOpenBooking }) {
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
           <div className="xl:hidden bg-[#0c0c10] border-b border-white/10 px-5 py-6 space-y-4 animate-in slide-in-from-top duration-200">
+            {/* Mobile Drawer Brand Header */}
+            <div className="flex items-center gap-3 pb-3 border-b border-white/10">
+              <img
+                src="/images/aurum-shine-logo.jpg"
+                alt="Aurum Shine Detailing Logo"
+                className="h-10 w-auto object-contain rounded-lg border border-white/10 bg-black/40"
+              />
+              <div className="flex flex-col">
+                <span className="font-bold tracking-wider text-base text-white font-['Outfit']">
+                  AURUM SHINE <span className="text-[#ff1a2b]">DETAILING</span>
+                </span>
+                <span className="text-[10px] tracking-[0.2em] uppercase font-mono text-zinc-400">
+                  JAIPUR • STUDIO
+                </span>
+              </div>
+            </div>
+
             <div className="grid grid-cols-2 gap-2 text-sm font-medium">
               {navLinks.map((link) => (
                 <a
@@ -208,7 +211,7 @@ export default function Navbar({ onOpenBooking }) {
                   <span>Call Studio</span>
                 </a>
                 <a
-                  href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Detailing%20Rebels%20Jaipur,%20I%20would%20like%20to%20inquire%20about%20your%20services.`}
+                  href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20would%20like%20to%20inquire%20about%20your%20services.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 py-2.5 rounded-lg bg-zinc-900 border border-white/10 text-xs font-mono text-emerald-400"

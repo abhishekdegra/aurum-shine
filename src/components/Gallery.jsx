@@ -55,7 +55,7 @@ export default function Gallery() {
               EDITORIAL GALLERY
             </h2>
             <p className="mt-2 text-zinc-400 text-sm sm:text-base font-light">
-              Real cars, authentic studio craft, and unedited optical clarity captured inside Detailing Rebels Jaipur.
+              Real cars, authentic studio craft, and unedited optical clarity captured inside Aurum Shine Detailing Jaipur.
             </p>
           </div>
 

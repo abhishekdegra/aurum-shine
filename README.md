@@ -1,11 +1,11 @@
-# DETAILING REBELS — JAIPUR
+# AURUM SHINE DETAILING — JAIPUR
 ### Premium Automotive Detailing Studio | Official Web Application
 
 [![Vite](https://img.shields.io/badge/Vite-8.x-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-19.x-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-A bespoke, agency-tier digital web experience built for **Detailing Rebels — Jaipur**, a premier automotive detailing studio specializing in certified Paint Protection Film (PPF), 10H Nano-Ceramic coatings, multi-stage paint correction, luxury interior care, and contactless snow foam washes.
+A bespoke, agency-tier digital web experience built for **Aurum Shine Detailing — Jaipur**, a premier automotive detailing studio specializing in certified Paint Protection Film (PPF), 10H Nano-Ceramic coatings, multi-stage paint correction, luxury interior care, and contactless snow foam washes.
 
 ---
 
@@ -80,7 +80,7 @@ npm run preview
 
 ## 📍 Studio Information
 
-* **Studio**: Detailing Rebels Detailing Studio
+* **Studio**: Aurum Shine Detailing Studio
 * **Location**: Jaipur, Rajasthan, India
 * **Official Hotline / WhatsApp**: +91 95094 54982
 * **Hours**: Monday – Sunday: 9:30 AM – 8:00 PM

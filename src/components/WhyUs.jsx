@@ -21,7 +21,7 @@ export default function WhyUs({ onOpenBooking }) {
           </h2>
 
           <p className="mt-2 text-zinc-400 text-xs sm:text-sm leading-relaxed font-light">
-            We rejected the high-volume car wash model. Detailing Rebels is built around single-vehicle obsessive focus.
+            We rejected the high-volume car wash model. Aurum Shine Detailing is built around single-vehicle obsessive focus.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ export default function WhyUs({ onOpenBooking }) {
               </div>
 
               <div className="mt-4 pt-2.5 border-t border-white/5 flex items-center gap-1.5 text-[10px] font-mono text-[#ff4d5a]">
-                <span>The Rebels Standard</span>
+                <span>The Aurum Shine Standard</span>
                 <Check className="w-3 h-3" />
               </div>
             </div>

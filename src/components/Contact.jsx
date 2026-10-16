@@ -14,7 +14,7 @@ export default function Contact({ onOpenBooking }) {
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase font-['Outfit'] leading-none">
-            DETAILING REBELS <br />
+            AURUM SHINE DETAILING <br />
             <span className="text-[#ff1a2b]">JAIPUR STUDIO</span>
           </h2>
 
@@ -37,7 +37,7 @@ export default function Contact({ onOpenBooking }) {
                     Studio Location
                   </h4>
                   <p className="text-base font-semibold text-white mt-0.5">
-                    Detailing Rebels Detailing Studio
+                    Aurum Shine Detailing Studio
                   </p>
                   <p className="text-xs text-zinc-300 font-light mt-0.5 leading-relaxed">
                     Main Detailing Hub, Jaipur, Rajasthan, India
@@ -107,7 +107,7 @@ export default function Contact({ onOpenBooking }) {
                 </a>
 
                 <a
-                  href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Detailing%20Rebels%20Jaipur,%20I%20would%20like%20to%20book%20a%20detailing%20slot.`}
+                  href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20would%20like%20to%20book%20a%20detailing%20slot.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 py-3 rounded-lg bg-emerald-950/40 hover:bg-emerald-900/50 border border-emerald-500/30 text-xs font-mono text-emerald-300 transition-colors"
@@ -123,7 +123,7 @@ export default function Contact({ onOpenBooking }) {
           <div className="lg:col-span-7 rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 relative min-h-[400px] flex flex-col justify-between">
             {/* Interactive Google Map iframe targeting Jaipur */}
             <iframe
-              title="Detailing Rebels Jaipur Location Map"
+              title="Aurum Shine Detailing Jaipur Location Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113888.75628549646!2d75.72714272895696!3d26.88514175373656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
               className="w-full h-full min-h-[380px] border-0 filter invert contrast-125 opacity-80 hover:opacity-100 transition-opacity"
               loading="lazy"
@@ -136,7 +136,7 @@ export default function Contact({ onOpenBooking }) {
                 FLAGSHIP STUDIO
               </span>
               <p className="text-xs font-bold text-white font-['Outfit'] mt-0.5">
-                Detailing Rebels Studio • Jaipur
+                Aurum Shine Detailing Studio • Jaipur
               </p>
               <p className="text-[11px] text-zinc-400 font-mono mt-0.5">
                 Dust-Free Climate Controlled Facility

@@ -70,7 +70,7 @@ export default function App() {
         {/* Interactive Before & After Paint Correction Slider */}
         <BeforeAfter onOpenBooking={handleOpenBooking} />
 
-        {/* Why Detailing Rebels (Trust & Standards) */}
+        {/* Why Aurum Shine Detailing (Trust & Standards) */}
         <WhyUs onOpenBooking={handleOpenBooking} />
 
         {/* 4-Step Systematic Protocol Timeline */}

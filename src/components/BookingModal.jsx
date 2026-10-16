@@ -81,7 +81,7 @@ export default function BookingModal({ isOpen, onClose, initialService = "" }) {
       : "Flexible";
 
     const messageLines = [
-      "*DETAILING REBELS — JAIPUR*",
+      "*AURUM SHINE DETAILING — JAIPUR*",
       "_Premium Automotive Detailing Studio_",
       "━━━━━━━━━━━━━━━━━━━━━",
       "*STUDIO BOOKING ENQUIRY*",
@@ -144,7 +144,7 @@ export default function BookingModal({ isOpen, onClose, initialService = "" }) {
             </div>
             <div>
               <span className="text-[10px] font-mono uppercase tracking-widest text-[#ff4d5a] font-bold">
-                Detailing Rebels • Jaipur Studio
+                Aurum Shine Detailing • Jaipur Studio
               </span>
               <h3 className="text-xl font-black text-white font-['Outfit'] uppercase">
                 BOOK YOUR DETAILING
@@ -300,7 +300,7 @@ export default function BookingModal({ isOpen, onClose, initialService = "" }) {
                   <span className="text-[10px] text-zinc-500">Auto-formatted</span>
                 </div>
                 <div className="p-3 rounded-lg bg-[#111b21] text-xs font-mono text-zinc-200 space-y-1 border-l-2 border-emerald-500">
-                  <div className="text-white font-bold">DETAILING REBELS — JAIPUR</div>
+                  <div className="text-white font-bold">AURUM SHINE DETAILING — JAIPUR</div>
                   <div className="text-zinc-400 italic text-[11px]">Premium Automotive Detailing Studio</div>
                   <div className="text-zinc-600 text-[10px]">───────────────────────</div>
                   <div>• <strong className="text-white">Customer:</strong> {name || "Your Name"}</div>
@@ -341,7 +341,7 @@ export default function BookingModal({ isOpen, onClose, initialService = "" }) {
               </p>
 
               <div className="p-4 rounded-xl bg-zinc-900/80 border border-white/10 text-left text-xs font-mono space-y-1.5 max-w-md mx-auto">
-                <div className="text-zinc-400">Recipient: <span className="text-white">Detailing Rebels Jaipur ({STUDIO_INFO.phone})</span></div>
+                <div className="text-zinc-400">Recipient: <span className="text-white">Aurum Shine Detailing Jaipur ({STUDIO_INFO.phone})</span></div>
                 <div className="text-zinc-400">Service: <span className="text-[#ff4d5a]">{service}</span></div>
                 <div className="text-zinc-400">Slot Request: <span className="text-white">{date} ({time})</span></div>
               </div>

@@ -1,8 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <rect width="64" height="64" rx="14" fill="#0c0c0e"/>
-  <path d="M8 38 C14 26, 26 20, 36 20 C46 20, 54 27, 56 34" stroke="#ff2434" stroke-width="4" stroke-linecap="round"/>
-  <path d="M14 42 C20 33, 28 29, 36 29 C44 29, 50 34, 52 39" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-  <circle cx="21" cy="42" r="3.5" fill="#ff2434"/>
-  <circle cx="45" cy="42" r="3.5" fill="#ff2434"/>
-  <path d="M26 42 L40 42" stroke="#ff2434" stroke-width="2" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE685"/>
+      <stop offset="40%" stop-color="#DFAC42"/>
+      <stop offset="70%" stop-color="#C59325"/>
+      <stop offset="100%" stop-color="#8C6314"/>
+    </linearGradient>
+    <linearGradient id="goldLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D9A132"/>
+      <stop offset="50%" stop-color="#FFF2A3"/>
+      <stop offset="100%" stop-color="#C69428"/>
+    </linearGradient>
+    <linearGradient id="shieldBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Tile -->
+  <rect width="64" height="64" rx="14" fill="#09090b"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" stroke="url(#gold)" stroke-width="1.5" stroke-opacity="0.4"/>
+  <!-- Golden Shield Outline -->
+  <path d="M32 9 L48 16 V29 C48 40.5 41 49 32 53 C23 49 16 40.5 16 29 V16 Z" fill="url(#shieldBg)" stroke="url(#gold)" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Stylized Monogram "A" with Automotive Swoop -->
+  <path d="M32 17 L22 41 H27.5 L29.5 35.5 H34.5 L36.5 41 H42 L32 17 Z M32 24.5 L33.7 30.5 H30.3 L32 24.5 Z" fill="url(#goldLight)"/>
+  <path d="M19 36 C24 31 32 30 45 35" stroke="#ff2434" stroke-width="2" stroke-linecap="round"/>
 </svg>

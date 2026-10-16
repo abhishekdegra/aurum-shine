@@ -108,7 +108,7 @@ export default function StudioExperience({ onOpenBooking }) {
           <div className="lg:col-span-7 relative rounded-2xl overflow-hidden border border-white/15 bg-zinc-950 shadow-2xl group min-h-[260px] sm:min-h-[340px]">
             <img
               src="/images/studio-facade.jpg"
-              alt="Detailing Rebels Detailing Studio Jaipur Exterior Facade"
+              alt="Aurum Shine Detailing Studio Jaipur Exterior Facade"
               className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-102"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
@@ -119,7 +119,7 @@ export default function StudioExperience({ onOpenBooking }) {
                   FLAGSHIP STUDIO FACADE • JAIPUR
                 </span>
                 <p className="text-xs sm:text-sm font-bold text-white font-['Outfit'] mt-0.5">
-                  DETAILING REBELS STUDIO
+                  AURUM SHINE DETAILING STUDIO
                 </p>
                 <p className="text-[11px] text-zinc-400 font-mono">
                   "Drive Clean. Stay Blessed."

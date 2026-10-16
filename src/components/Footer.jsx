@@ -14,28 +14,15 @@ export default function Footer({ onOpenBooking, onReplayIntro }) {
           {/* Brand Col */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-zinc-900 border border-white/10 flex items-center justify-center">
-                <svg viewBox="0 0 40 40" className="w-7 h-7 text-[#ff1a2b]" fill="none">
-                  <path
-                    d="M4 24 C8 15, 17 11, 24 11 C31 11, 36 16, 37 21"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M8 27 C13 20, 19 17, 24 17 C29 17, 33 21, 34 25"
-                    stroke="#ffffff"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                  />
-                  <circle cx="13" cy="27" r="2.5" fill="currentColor" />
-                  <circle cx="29" cy="27" r="2.5" fill="currentColor" />
-                </svg>
-              </div>
+              <img
+                src="/images/aurum-shine-logo.jpg"
+                alt="Aurum Shine Detailing Logo"
+                className="h-11 w-auto max-w-[60px] object-contain rounded-lg border border-white/15 bg-black/40 shadow-sm"
+              />
 
               <div>
                 <span className="font-extrabold tracking-wider text-xl text-white font-['Outfit']">
-                  DETAILING <span className="text-[#ff1a2b]">REBELS</span>
+                  AURUM SHINE <span className="text-[#ff1a2b]">DETAILING</span>
                 </span>
                 <span className="block text-[10px] font-mono tracking-widest uppercase text-zinc-500">
                   JAIPUR • DETAILING STUDIO
@@ -63,7 +50,7 @@ export default function Footer({ onOpenBooking, onReplayIntro }) {
               </a>
 
               <a
-                href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Detailing%20Rebels%20Jaipur`}
+                href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg bg-zinc-900 border border-white/10 flex items-center justify-center text-emerald-400 hover:text-emerald-300 hover:border-emerald-500/50 transition-colors"
@@ -129,7 +116,7 @@ export default function Footer({ onOpenBooking, onReplayIntro }) {
             </h4>
             <div className="space-y-2.5 text-xs">
               <p className="text-zinc-300">
-                Detailing Rebels Studio, Jaipur, Rajasthan
+                Aurum Shine Detailing Studio, Jaipur, Rajasthan
               </p>
               <p className="text-zinc-400 font-mono">
                 {STUDIO_INFO.hours}
@@ -154,7 +141,7 @@ export default function Footer({ onOpenBooking, onReplayIntro }) {
         {/* Bottom Bar with Final Lines */}
         <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs font-mono text-zinc-500">
           <div className="flex items-center gap-2 flex-wrap justify-center sm:justify-start">
-            <span>© {new Date().getFullYear()} Detailing Rebels. All rights reserved.</span>
+            <span>© {new Date().getFullYear()} Aurum Shine Detailing. All rights reserved.</span>
             <span>•</span>
             <span className="text-zinc-400">Jaipur, India</span>
             {onReplayIntro && (

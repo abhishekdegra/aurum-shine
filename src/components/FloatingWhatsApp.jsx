@@ -30,7 +30,7 @@ export default function FloatingWhatsApp({ onOpenBooking }) {
 
       {/* Quick Direct Link to WA */}
       <a
-        href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Detailing%20Rebels%20Jaipur,%20I%20would%20like%20to%20book%20a%20detailing%20slot.`}
+        href={`https://wa.me/${STUDIO_INFO.whatsappNumber}?text=Hello%20Aurum%20Shine%20Detailing%20Jaipur,%20I%20would%20like%20to%20book%20a%20detailing%20slot.`}
         target="_blank"
         rel="noopener noreferrer"
         data-cursor="CHAT"

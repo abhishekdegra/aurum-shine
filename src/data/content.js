@@ -1,5 +1,5 @@
 export const STUDIO_INFO = {
-  name: "Detailing Rebels",
+  name: "Aurum Shine Detailing",
   subtitle: "Premium Automotive Detailing Studio",
   city: "Jaipur",
   state: "Rajasthan",
@@ -9,9 +9,9 @@ export const STUDIO_INFO = {
   cleanPhone: "919509454982",
   whatsappNumber: "919509454982",
   hours: "Monday – Sunday: 9:30 AM – 8:00 PM",
-  address: "Detailing Rebels Detailing Studio, Main Tonk Road / Jagatpura Link, Jaipur, Rajasthan",
-  mapUrl: "https://maps.google.com/?q=Detailing+Rebels+Jaipur",
-  instagram: "https://instagram.com/detailingrebels",
+  address: "Aurum Shine Detailing Studio, Main Tonk Road / Jagatpura Link, Jaipur, Rajasthan",
+  mapUrl: "https://maps.google.com/?q=Aurum+Shine+Detailing+Jaipur",
+  instagram: "https://instagram.com/aurumshinedetailing",
 };
 
 export const SERVICES = [
@@ -130,7 +130,7 @@ export const GALLERY_ITEMS = [
   },
   {
     id: 2,
-    title: "Detailing Rebels Jaipur Studio Facade",
+    title: "Aurum Shine Detailing Jaipur Studio Facade",
     category: "Studio Bay",
     tag: "Flagship Studio",
     image: "/images/studio-facade.jpg",
@@ -277,7 +277,7 @@ export const REVIEWS = [
     service: "Full Body PPF + Interior Spa",
     rating: 5,
     date: "Verified Google Review",
-    comment: "The edge-wrapping on the PPF is phenomenal. You literally cannot tell the film is on the car. Detailing Rebels Jaipur has raised the bar for car care in Rajasthan.",
+    comment: "The edge-wrapping on the PPF is phenomenal. You literally cannot tell the film is on the car. Aurum Shine Detailing Jaipur has raised the bar for car care in Rajasthan.",
   },
   {
     id: 2,
@@ -295,7 +295,7 @@ export const REVIEWS = [
     service: "Stage 2 Paint Correction",
     rating: 5,
     date: "Verified Google Review",
-    comment: "My black BMW had swirl marks from the previous owner's daily wash. Detailing Rebels completely restored the paint to liquid mirror perfection. Unbelievable work.",
+    comment: "My black BMW had swirl marks from the previous owner's daily wash. Aurum Shine Detailing completely restored the paint to liquid mirror perfection. Unbelievable work.",
   },
   {
     id: 4,
