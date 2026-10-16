@@ -68,29 +68,27 @@ export default function Navbar({ onOpenBooking }) {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          {/* Brand Logo */}
-          <a href="#" className="flex items-center gap-3 group">
+          {/* Brand Logo & Name Lockup */}
+          <a href="#" className="flex items-center gap-2 sm:gap-3 group shrink-0">
             {/* Provided Aurum Shine Detailing Logo */}
             <img
               src="/images/aurum-shine-logo.jpg"
               alt="Aurum Shine Detailing Logo"
-              className="h-10 md:h-11 w-auto max-w-[56px] object-contain rounded-lg border border-white/15 bg-black/40 group-hover:border-[#ff1a2b]/60 transition-colors shadow-sm"
+              className="h-9 sm:h-10 md:h-11 w-auto max-w-[44px] sm:max-w-[56px] object-contain rounded-lg border border-white/15 bg-black/40 group-hover:border-[#ff1a2b]/60 transition-colors shadow-sm shrink-0"
             />
 
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="font-extrabold tracking-wider text-lg md:text-xl text-white font-['Outfit'] group-hover:text-[#ff1a2b] transition-colors">
+            <div className="flex flex-col justify-center leading-none shrink-0">
+              <div className="flex items-baseline gap-1.5 whitespace-nowrap">
+                <span className="font-black tracking-tight text-sm sm:text-base md:text-xl text-white font-['Outfit'] group-hover:text-[#ff1a2b] transition-colors">
                   AURUM SHINE
                 </span>
-                <span className="font-black tracking-wider text-lg md:text-xl text-[#ff1a2b] font-['Outfit']">
+                <span className="font-black tracking-wider text-[11px] sm:text-xs md:text-base text-[#ff1a2b] font-['Outfit'] uppercase">
                   DETAILING
                 </span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-[10px] tracking-[0.25em] uppercase font-mono text-zinc-400">
-                  JAIPUR • STUDIO
-                </span>
-              </div>
+              <span className="text-[8px] sm:text-[9px] md:text-[10px] tracking-[0.2em] sm:tracking-[0.25em] uppercase font-mono text-zinc-400 mt-0.5 sm:mt-1">
+                JAIPUR • STUDIO
+              </span>
             </div>
           </a>
 
@@ -130,7 +128,7 @@ export default function Navbar({ onOpenBooking }) {
           </div>
 
           {/* Mobile Right Controls */}
-          <div className="flex xl:hidden items-center gap-2">
+          <div className="flex xl:hidden items-center gap-1.5 sm:gap-2 shrink-0">
             <button
               onClick={() => onOpenBooking()}
               className="sm:inline-flex hidden items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-bold font-mono uppercase bg-[#ff1a2b] text-white"
